@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ecuaiones</title>
+  <style type="text/css">
+    .calculos{
+    background: #006DB9;
+    color: #f0e8e6;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    }
+    body{
+      font-family: 'Open Sans', sans-serif;
+    	font-weight: normal;
+    	color: #A22344;
+    	font-size: 20px;
+      text-align:center;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Operaciones Aritmeticas</h1>
+    <h2>Marco Antonio Aduviri Mollo</h2>
+  </header>
+  <img src="imgs.jpg" width="900" height="150">
+
+   <article>
+     <div class="calculos" id="salida">
+
+     </div>
+     <script type="text/javascript">
+       var a;
+       var b;
+       var c;
+
+       a= prompt("Introduce a : "," ");
+       b= prompt("Introduce b : "," ");
+       c= prompt("Introduce c : "," ");
+
+       var x1= -b+(Math.sqrt(Math.pow(b,2)-(4*a*c)))
+       var x2= 2*a
+       var result= x1/x2
+
+       var x3= -b-(Math.sqrt(Math.pow(b,2)-(4*a*c)))
+       var x4= 2*a
+       var result2= x3/x4
+
+       document.getElementById("salida").innerHTML ="El resultado de X1 es : " + result+ "<br> El resultado de X2 es : " +result2;
+     </script>
+   </article>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	 .calculos{
+	 	background: #c7502c;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 30px;
+	 }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Determinar que dia es hoy en distintos idiomas</h1>
+		<img src="ingles.jpg" >
+	</header>
+	<article>
+			<div class="calculos" id="salida">
+			</div>
+			<script type="text/javascript">
+				var dia; <!-- español -->
+				var day; <!-- ingles -->
+				var punchay; <!-- quechua -->
+				var uru; <!-- aymara -->
+				var ara; <!-- guarani -->
+				var mes;
+				var year;
+			  var wata ;
+			  var marana ;
+				var ary;
+				var img=document.createElement("img");
+
+
+				switch (new Date().getDay()) {
+					case 0:
+						dia="Domingo";
+						break;
+					case 1:
+						dia="Lunes"; <!-- español -->
+						day="Mondey"; <!-- ingles -->
+						//Ahora le añadimos el atributo source indicando  la ruta de la imagen
+						img.src="ingles.jpg";
+						//metemos en la variable el objeto con id fooBar
+						var foo = document.getElementById("fooBar");
+						//finalmente añadimos con appendChild el elemento img dentro del div con id fooBar
+						foo.appendChild(img);
+						punchay="Killachaw"; <!-- quechua -->
+						uru="Phaxsüru"; <!-- aymara -->
+						ara="Arakôi"; <!-- guarani -->
+						break;
+					case 2:
+						dia="Martes";
+						day="Tuesday"; <!-- ingles -->
+						punchay="Quyllurchaw"; <!-- quechua -->
+						uru="Atüru"; <!-- aymara -->
+						ara="Araapy"; <!-- guarani -->
+						break;
+					case 3:
+						dia="Miercoles";<!-- español -->
+						day="Wednesday"; <!-- ingles -->
+						punchay="Quyllurchaw"; <!-- quechua -->
+						uru="Warüru"; <!-- aymara -->
+						ara="Ararundy"; <!-- guarani -->
+						break;
+					case 4:
+						dia="Jueves";
+						day="Thursday"; <!-- ingles -->
+						punchay="Illapachaw"; <!-- quechua -->
+						uru="Illapüru"; <!-- aymara -->
+						ara="Arapo"; <!-- guarani -->
+						break;
+					case 5:
+						dia="Viernes";
+						day="Friday"; <!-- ingles -->
+						punchay="Ch'askachaw"; <!-- quechua -->
+						uru="Urüru"; <!-- aymara -->
+						ara="Arapoteî"; <!-- guarani -->
+						break;
+					case 6:
+						dia="Sabado";
+						day="Saturday"; <!-- ingles -->
+						punchay="K'uychichaw"; <!-- quechua -->
+						uru="Kurmüru"; <!-- aymara -->
+						ara="Arapokôi"; <!-- guarani -->
+						break;
+				}
+				switch (new Date().getMonth()) {
+	case 0:
+		mes="Enero";
+		year="January"
+		wata ="Ramay Raymi";
+		marana ="Chinuqa";
+		ary="Jasyteĩ";
+		break;
+	case 1:
+		mes="Febrero";
+		year="February";
+		wata ="Hatun Poqoy";
+		marana ="Anata";
+		ary="Jasykõi";
+		break;
+	case 2:
+		mes="Marzo";
+		year="March";
+		wata ="PauqarWaray";
+		marana ="Achuqa";
+		ary="Jasyapy";
+		break;
+	case 3:
+		mes="Abril";
+		year="April";
+		wata ="Ayriway";
+		marana ="Qasiwi";
+		ary="Jasyrundy";
+		break;
+	case 4:
+		mes="Mayo";
+		year="May";
+		wata ="Aymuray";
+		marana ="Llamayu";
+		ary="Jasypo";
+		break;
+	case 5:
+		mes="Junio";
+		year="June";
+		wata ="Inti Raymi";
+		marana ="Marat'aqa";
+		ary="Jasypoteĩ";
+		break;
+	case 6:
+		mes="Julio";
+		year="July";
+		wata ="Anta Situwa";
+		marana ="Willkakuti";
+		ary="Jasypokõi";
+		break;
+	case 7:
+		mes="Agosto";
+		year="August";
+		wata ="QhapaqSituwa";
+		marana ="Llumpaqa";
+		ary="Jasypoapy";
+		break;
+	case 8:
+		mes="Septiembre";
+		year="September";
+		wata ="UnuRaymi";
+		marana ="Sata";
+		ary="Ñe'êndy";
+		break;
+	case 9:
+		mes="Octubre";
+		year="October";
+		wata ="Qoya Raymi";
+		marana ="Taypisata";
+		ary="jasypa";
+		break;
+	case 10:
+		mes="Noviembre";
+		year="November";
+		wata ="Ayamarq’ay";
+		marana ="Lapaqa";
+		ary="Jasypateĩ";
+		break;
+	case 11:
+		mes="Diciembre";
+		year="December";
+		wata="Qhapaq Raymi";
+		marana="Jalluqallta";
+		ary="Jasypakõi";
+		break;
+}
+			document.getElementById("salida").innerHTML = "hoy es " + dia+ "<br> en ingles: " + day + "<br>" +foo+  " <br> en quechua : " +punchay+ "<br> en aymara: " +uru+ "<br> en guarani: "+ara+
+			 "<br>En Español: " +mes+ "<br>En ingles: " +year+ "<br>En Quechua: " +wata+ "<br>En Aymara: " +marana+ "<br>En Guarani: " +ary;
+			</script>
+</article>
+</body>
+</html>
